@@ -10,3 +10,11 @@ spam = [
     "Spam",
     "   Spam,    spam, spam,    spam, spam, eggs, and spam      ",
 ]
+
+def cleanup():
+    pass
+
+for s in spam():
+    clean_s = cleanup(s)
+    print(f"s is >{s}< clean_s is >{clean_s}")
+

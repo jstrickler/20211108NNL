@@ -5,7 +5,7 @@ min = 0
 tries = 0
 
 while True:
-    guess = int((max + min)/2)
+    guess = (max + min)//2
     ans = input("Is {0} your number? ".format(guess))
 
     if ans == "q":

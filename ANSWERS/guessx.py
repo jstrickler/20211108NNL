@@ -2,14 +2,17 @@
 
 import sys
 
-max = 26
 if len(sys.argv) > 1:
-    max = int(sys.argv[1]) + 1
+    raw_max = sys.argv[1]
+else:
+    raw_max = input("Enter maximum: ")
+
+max = int(raw_max) + 1
 min = 0
 tries = 0
 
 while True:
-    guess = (max + min)/2
+    guess = (max + min)//2
     ans = input("Is {0} your number? ".format(guess))
 
     if ans == "q":
