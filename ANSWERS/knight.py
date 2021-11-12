@@ -2,9 +2,9 @@
 class UnknownKnightError(Exception):
     pass
 
-class Knight(object):
+class Knight:
 
-    def __init__(self,name):
+    def __init__(self, name):
         self._name = name
         with open('../DATA/knights.txt') as knights_in:
             for line in knights_in:
@@ -14,7 +14,6 @@ class Knight(object):
                     self._color = color
                     self._quest = quest
                     self._comment = cmt
-                    found = True
                     break
             else:
                 raise UnknownKnightError("No such knight as '" + self._name + "'")   
@@ -41,9 +40,10 @@ class Knight(object):
             
 
 if __name__== "__main__":
-    k = Knight("Arthur")
-    print(k.name,k.favorite_color, k.comment, k.title)
-    try:
-        k2 = Knight("Randolph")
-    except UnknownKnightError as e:
-        print(e)
+    for name in 'Arthur', 'Bedevere', 'Wilbur', 'Robin', 'Randolph':
+        try:
+            k = Knight(name)
+        except UnknownKnightError as e:
+            print(e)
+        else:
+            print(k.name, k.favorite_color, k.comment, k.title)

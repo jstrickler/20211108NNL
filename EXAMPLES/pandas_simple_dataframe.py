@@ -28,4 +28,6 @@ print_header('DataFrame df')
 print(df, '\n')
 
 print_header("df['gamma']")
-print(df['gamma'])  # <5>
+print(df['gamma'])  # one column
+print(df['a':'a'])  # slice of one or more rows
+print(df[['gamma', 'beta']]) # two (or more) columns

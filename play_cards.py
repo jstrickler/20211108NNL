@@ -1,4 +1,6 @@
+##
 from carddeck import CardDeck, JokerDeck
+##
 # client code
 
 d1 = CardDeck("Abigail")
@@ -43,17 +45,22 @@ print()
 print(len(d1), len(d2))
 print(d1)
 print(d2)
+##
 print(repr(d1))
 print(repr(d2))
-
+##
 print(d1.get_ranks())
 print(CardDeck.get_ranks())
-
+##
 j = JokerDeck('Albert')
 print(j)
 j.shuffle()
+##
+
+##
 print(j.draw())
 print(j.cards)
+##
 
 
 

@@ -10,3 +10,6 @@ print()
 
 print(df.head())  # <.>
 
+df['Unit Cost'] /= 2
+
+df.to_csv('salesdata_out.csv')

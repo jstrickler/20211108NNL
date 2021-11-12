@@ -42,3 +42,10 @@ print()
 
 a += 1000  # <7>
 print(a)
+print()
+
+def doit(x):
+    return (x // 2) ** .5
+
+result = doit(a)
+print(result)

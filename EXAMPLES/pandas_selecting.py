@@ -34,3 +34,7 @@ print()
 print_header("df[['alpha','epsilon','beta']]['b':'e']")
 print(df[['alpha', 'epsilon', 'beta']]['b':'e'])  # <9>
 print()
+
+df.alpha *= 10
+print(df)
+df.to_csv("james.csv", header=False, index=False)

@@ -19,10 +19,10 @@ df = pd.DataFrame(values, index=index, columns=cols)  # <1>
 print_header('DataFrame df')
 print(df, '\n')
 
-df2 = df.drop(['beta', 'delta'], axis=1)  # <2>
+df.drop(['beta', 'delta'], axis=1, inplace=True)  # <2>
 print_header("After dropping beta and delta:")
-print(df2, '\n')
+print(df, '\n')
 
 print_header("After dropping rows b, c, and e")
-df3 = df.drop(['b', 'c', 'e'])  # <3>
-print(df3)
+df.drop(['b', 'c', 'e'], inplace=True)  # <3>
+print(df)
