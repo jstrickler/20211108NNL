@@ -1,0 +1,85 @@
+
+pat    "pit pat put"   "I see a pattern"  "I wear spats"  "Keep to the right"
+NOT "peat is a fuel"
+. any one char
+p.t
+[abc] any ONE char in brackets
+[^abc] any one char NOT in brackets
+p[aeiou]t
+p[^aeiou]t
+p[a-z]t   A[0-9]B
+
+[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+\d\d\d-\d\d-\d\d\d\d
+
+\d [0-9]          \D [^0-9]
+\s [ \t\n\r\f]    \S [^ \t\n\r\f]
+\w [a-zA-Z0-9_]   \W [^a-zA-Z0-9_]
+
+foo\sbar
+p\St
+
+foo\s+bar
+
+* 0 or more
++ 1 or more
+? 0 or 1
+{n}  exactly n
+{n,} n or more
+{n,m} n through m
+
+pa*t    pt pat  paaaaaaaaaaaaaaaaaaaaat
+
+p[aeiou]+t  pot peat poot pout pet piet peet paiuuouueioat
+
+\d{3}-\d{2}-\d{4}
+
+(\(\d{3}\)\s*|\d{3}-)\d{3}-\d{4}
+"353-393-3902"  or "(919) 523-3710"
+
+(\d{3})-(\d{2})-(\d{4})
+
+ANCHORS!
+^  beginning of string
+$  end of string
+\b  beginning or end of word
+
+^-?\d+$    "42"  "-253"  "838280380238"
+          NOT "  42"   "2-53"
+
+"the therapist is going to bathe the lathe"
+\bthe\b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+John	Adams	Braintree, Norfolk
+John Quincy	Adams	Braintree, Norfolk
+John Fitzgerald	Kennedy	Brookline
+George Herbert Walker	Bush	Milton

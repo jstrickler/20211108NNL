@@ -71,6 +71,10 @@ for first_name, last_name, product, dob, junk in sorted(people, key=lambda p: (p
     print(last_name, dob, junk)
 print("=" * 60)
 
-
+print(nums)
+print(sorted(nums))
+print(nums)
+nums.sort()
+print(nums)
 
 
